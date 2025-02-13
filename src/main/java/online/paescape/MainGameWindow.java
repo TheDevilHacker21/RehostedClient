@@ -27,7 +27,7 @@ public class MainGameWindow {
         if (args.length > 0) {
             Configuration.DEBUG = args[0].equals("-debug");
             if (Configuration.DEBUG) {
-                Configuration.HOST = "135.181.166.97";
+                Configuration.HOST = "127.0.0.1";
             } else if (args[0].equals("-server")) {
                 Configuration.HOST = args[1];
             }

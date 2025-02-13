@@ -1,4 +1,3 @@
-call
 import proguard.gradle.ProGuardTask
 
 group = "online.paescape"
@@ -289,4 +288,3 @@ tasks {
 }
 
 apply<BootstrapPlugin>()
-echo

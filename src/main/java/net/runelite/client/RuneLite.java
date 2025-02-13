@@ -104,7 +104,7 @@ public class RuneLite
 	public static final File DEFAULT_SESSION_FILE = new File(RUNELITE_DIR, "session");
 	public static final File DEFAULT_CONFIG_FILE = new File(RUNELITE_DIR, "settings.properties");
 
-	public static final String SERVER_IP = "135.181.166.97";
+	public static final String SERVER_IP = "127.0.0.1";
 
 	public static boolean devMode = true;
 	private static final int MAX_OKHTTP_CACHE_SIZE = 20 * 1024 * 1024; // 20mb
