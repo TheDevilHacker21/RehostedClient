@@ -21,7 +21,7 @@ public final class Stream extends QueueNode {
     public int bitPosition;
     public ISAACRandomGen encryption;
 
-    private Stream() {
+    public Stream() {
     }
 
     public Stream(byte[] abyte0) {

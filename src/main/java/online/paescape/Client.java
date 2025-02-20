@@ -414,7 +414,7 @@ public class Client extends RSApplet implements RSClient {
     public static int consoleAlpha = 0;
     public static boolean consoleOpen;
     public static short[][] equipBonuses;
-    static Stream stream;
+    public static Stream stream;
     static CollisionDetection[] clippingPlanes;
     private static boolean showRoofs = false;
     private static Sprite ANIMATED_BACKGROUND;
@@ -496,7 +496,7 @@ public class Client extends RSApplet implements RSClient {
     private final boolean[] aBooleanArray876;
     private final int maxPlayers;
     private final int myPlayerIndex;
-    private final int[] currentStats;
+    public final int[] currentStats;
     private final int[] anIntArray928;
     private final int[] chatTypes;
     private final String[] chatNames;
@@ -515,7 +515,7 @@ public class Client extends RSApplet implements RSClient {
     private final int[] myAppearanceColors;
     private final boolean aBoolean994;
     private final int[] anIntArray1030;
-    private final int[] currentMaxStats;
+    public final int[] currentMaxStats;
     private final int[] varbitConfigs;
     private final int[] minimapXPosArray;
     private final int[] anIntArray1057;
@@ -1064,7 +1064,7 @@ public class Client extends RSApplet implements RSClient {
     private int publicChatMode;
     private int showClanOptions;
     private String clanchatOwner = "";
-    private boolean quickPrsActive = false;
+    public boolean quickPrsActive = false;
     private int[] quickPrayers = new int[28];
     private int[] quickCurses = new int[20];
     private int[] defPray = {0, 5, 13, 24, 25, 26, 27};
@@ -21077,7 +21077,7 @@ public class Client extends RSApplet implements RSClient {
         tabInterfaceIDs[5] = prayerInterfaceType;
     }
 
-    protected void handleQuickAidsActive() {
+    public void handleQuickAidsActive() {
         if ((currentStats[5] / 10) <= 0) {
             pushMessage("You need to recharge your Prayer points at an altar.", 0, "");
             return;

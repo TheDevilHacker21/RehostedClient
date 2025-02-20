@@ -36,5 +36,5 @@ public class GameStateChanged
 	/**
 	 * The new game state.
 	 */
-	private GameState gameState;
+	public GameState gameState;
 }
